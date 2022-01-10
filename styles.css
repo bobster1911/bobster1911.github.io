@@ -1,0 +1,58 @@
+/* personal website 1 stylesheet 01/9/22 
+    LEGEND 
+    ======
+    fp - front page 
+    <insert>
+
+    */
+
+
+.nav-menu {
+    list-style-type: none;
+}
+
+.nav-menu-list {
+    display: inline;
+}
+
+.grid-container-fp {
+    display: grid;
+    grid-template-columns: 100px, auto, 100px;
+    grid-template-rows: 25%, 10%, auto, 15%;
+    grid-template-areas: 
+        ". header ."
+        ". menu ."
+        ". display-posts ."
+        ". footer ."
+
+}
+
+#g-header {
+    display: grid;
+    grid-area: header;
+    justify-content: center;
+    background-color: coral;
+    
+}
+#g-menu {
+    display: grid;
+    grid-area: menu;
+    background-color: lime;
+
+}
+#g-display-posts {
+    display: grid;
+    grid-area: display-posts;
+    background-color: skyblue;
+    
+}
+#g-footer {
+    display: grid;
+    grid-area: footer;
+    background-color: palevioletred;
+}
+
+
+
+
+
