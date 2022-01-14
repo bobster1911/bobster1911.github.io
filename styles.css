@@ -17,38 +17,51 @@
 
 .grid-container-fp {
     display: grid;
-    grid-template-columns: 100px, auto, 100px;
-    grid-template-rows: 25%, 10%, auto, 15%;
     grid-template-areas: 
-        ". header ."
-        ". menu ."
-        ". display-posts ."
-        ". footer ."
+        "l-side header r-side"
+        "l-side menu r-side"
+        "l-side display-posts r-side"
+        "l-side footer r-side"
 
 }
 
-#g-header {
+.l-side {
+    display: grid;
+    grid-area: l-side;
+    background-color: red;
+}
+
+.r-side {
+    display: grid;
+    grid-area: r-side;
+    background-color: lightgreen;
+}
+
+.g-header {
     display: grid;
     grid-area: header;
     justify-content: center;
     background-color: coral;
     
 }
-#g-menu {
+.g-menu {
     display: grid;
     grid-area: menu;
+    justify-content: center;
     background-color: lime;
 
 }
-#g-display-posts {
+.g-display-posts {
     display: grid;
     grid-area: display-posts;
+    justify-content: center;
     background-color: skyblue;
     
 }
-#g-footer {
+.g-footer {
     display: grid;
     grid-area: footer;
+    justify-content: center;
     background-color: palevioletred;
 }
 
