@@ -9,6 +9,7 @@
 
 .nav-menu {
     list-style-type: none;
+    padding-inline-start: 0px; /* to get rid of default padding in Chrome */
 }
 
 .nav-menu-list {
@@ -17,6 +18,8 @@
 
 .grid-container-fp {
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 1fr 4fr 2fr;
     grid-template-areas: 
         "l-side header r-side"
         "l-side menu r-side"
@@ -28,41 +31,46 @@
 .l-side {
     display: grid;
     grid-area: l-side;
-    background-color: red;
+    justify-content: center;
+
 }
 
 .r-side {
     display: grid;
     grid-area: r-side;
-    background-color: lightgreen;
+    justify-content: center;
+
 }
 
 .g-header {
     display: grid;
     grid-area: header;
     justify-content: center;
-    background-color: coral;
+    align-content: center;
     
 }
 .g-menu {
     display: grid;
     grid-area: menu;
     justify-content: center;
-    background-color: lime;
+
 
 }
 .g-display-posts {
     display: grid;
     grid-area: display-posts;
     justify-content: center;
-    background-color: skyblue;
+    border-style: solid;
+    border-width: 1px;
+
     
 }
 .g-footer {
     display: grid;
     grid-area: footer;
     justify-content: center;
-    background-color: palevioletred;
+    align-content: center;
+
 }
 
 
